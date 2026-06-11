@@ -156,3 +156,23 @@ This project is developed as a research prototype for Dantean-inspired emotional
 
 20. **Final Research Development**  
    The current notebook represents an experimental prototype. Further development will focus on expert validation, rule refinement, reproducibility improvement, and journal/thesis preparation.
+
+---
+
+## Dependencies
+The notebook uses the following main libraries:
+```text
+pypdf
+scikit-learn
+scikit-fuzzy
+pandas
+numpy
+matplotlib
+indoNLP
+deep-translator
+vaderSentiment
+transformers
+datasets
+evaluate
+accelerate
+torch
