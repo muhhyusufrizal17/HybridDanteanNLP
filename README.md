@@ -91,3 +91,68 @@ Fuzzy Mamdani Inference Design
 Planned Expert Rule Validation
         ↓
 Final Emotional State Classification
+
+---
+## Project Workflow
+
+This project is developed as a research prototype for Dantean-inspired emotional state classification. The workflow consists of several experimental stages:
+
+1. **Environment Setup**  
+   Install required libraries, mount Google Drive, and define the working directories for raw data, processed data, figures, benchmark datasets, and experimental results.
+
+2. **Dante Corpus Preparation**  
+   Load *Inferno*, *Purgatorio*, and *Paradiso* PDF files, extract the text, clean unnecessary headers, footers, footnotes, and split the corpus into canto-level text files.
+
+3. **Text Preprocessing and SNS Normalization**  
+   Normalize text using tokenization, lowercasing, slang normalization, word elongation handling, stopword removal, and informal SNS-style cleaning.
+
+4. **Dantean Label Construction**  
+   Build a labeled corpus based on the symbolic structure of *The Divine Comedy*. Inferno and Paradiso are used as polarity anchors, while Purgatorio is treated as a transitional or ambiguous emotional zone.
+
+5. **Log-Likelihood Ratio Analysis**  
+   Calculate token-level Log-Likelihood Ratio scores to identify lexical cues that distinguish Inferno-oriented and Paradiso-oriented emotional expressions.
+
+6. **Canto-Level Symbolic Scoring**  
+   Compute signed LLR scores and emotional intensity scores for each canto to represent the symbolic emotional tendency of each textual segment.
+
+7. **Fuzzy Membership Design**  
+   Construct fuzzy membership functions for Dantean emotional interpretation, including Inferno, Purgatorio, and Paradiso membership regions.
+
+8. **Threshold-based Naive Bayes Classification**  
+   Train and evaluate a Naive Bayes classifier using Dantean-labeled text. The model is used as the probabilistic classification layer of the framework.
+
+9. **Hybrid Dantean Inference Prototype**  
+   Combine probabilistic scores, LLR-based symbolic cues, fuzzy membership values, and contextual emotional cues to produce Dantean emotional state predictions.
+
+10. **SNS Text Testing**  
+   Test the model using user-input or social media text. The input text can be normalized, translated if necessary, scored using LLR, and classified into Dantean emotional states.
+
+11. **Contextual Override Layer**  
+   Apply rule-based contextual checks for hostility, recovery, uncertainty, emotional masking, exhaustion, and other SNS-specific cues.
+
+12. **Baseline Comparison**  
+   Compare the proposed Dantean Hybrid prototype with conventional and modern NLP baselines such as VADER, SVM, DistilBERT, IndoBERT, and XLM-RoBERTa.
+
+13. **SNS Benchmark Dataset Construction**  
+   Build a multi-emotion SNS benchmark dataset from categories such as anger, fear, joy, love, neutral, and sadness.
+
+14. **Benchmark Evaluation**  
+   Evaluate the framework on SNS benchmark data and compare its performance against baseline models.
+
+15. **Ablation Study**  
+   Test the contribution of each component, including TB-NB only, TB-NB + LLR, Dantean hierarchy, fuzzy ambiguity layer, and full hybrid configuration.
+
+16. **Threshold Sensitivity Analysis**  
+   Analyze how LLR threshold, fuzzy threshold, and contextual override threshold affect the performance of the hybrid framework.
+
+17. **Adaptive Fuzzy Experiment**  
+   Experiment with confidence-based fuzzy activation to reduce over-adjustment and improve ambiguity handling.
+
+18. **Planned Wang–Mendel Rule Generation**  
+   The Wang–Mendel rule generation stage is planned as a future extension to generate fuzzy rules from data patterns and reduce dependency on fully manual rule construction.
+
+19. **Planned Expert Rule Validation**  
+   Expert judgment is planned for validating Dantean symbolic mapping, fuzzy linguistic variables, Mamdani rule structure, and Wang–Mendel-generated rules.
+
+20. **Final Research Development**  
+   The current notebook represents an experimental prototype. Further development will focus on expert validation, rule refinement, reproducibility improvement, and journal/thesis preparation.
