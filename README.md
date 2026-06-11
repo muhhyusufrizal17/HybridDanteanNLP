@@ -176,3 +176,14 @@ datasets
 evaluate
 accelerate
 torch
+```
+
+---
+## Preliminary LLR Analysis
+As an early symbolic-probabilistic validation, the project calculates canto-level Log-Likelihood Ratio scores from the Dante corpus. The signed LLR score shows a clear lexical tendency between Inferno and Paradiso.
+- Negative scores indicate stronger Inferno-oriented lexical cues.
+- Positive scores indicate stronger Paradiso-oriented lexical cues.
+
+![LLR Signed Score per Canto](results/01_llr_signed_per_canto.png)
+
+The result suggests that the corpus contains distinguishable symbolic-emotional lexical patterns between Inferno and Paradiso. This supports the use of LLR as an interpretable feature layer before the fuzzy inference stage.
