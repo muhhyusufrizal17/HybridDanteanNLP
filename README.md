@@ -91,7 +91,7 @@ Fuzzy Mamdani Inference Design
 Planned Expert Rule Validation
         ↓
 Final Emotional State Classification
-
+```
 ---
 ## Project Workflow
 
