@@ -184,6 +184,6 @@ As an early symbolic-probabilistic validation, the project calculates canto-leve
 - Negative scores indicate stronger Inferno-oriented lexical cues.
 - Positive scores indicate stronger Paradiso-oriented lexical cues.
 
-![LLR Signed Score per Canto](results/01_llr_signed_per_canto.png)
+![LLR Signed Score per Canto](01_llr_signed_per_canto.png)
 
 The result suggests that the corpus contains distinguishable symbolic-emotional lexical patterns between Inferno and Paradiso. This supports the use of LLR as an interpretable feature layer before the fuzzy inference stage.
